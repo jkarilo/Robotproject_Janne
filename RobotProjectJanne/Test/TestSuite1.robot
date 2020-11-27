@@ -7,7 +7,7 @@ Test Setup    Log    I am inside Test Setup
 Test Teardown    Log    I am inside Test teardown
 
 Default Tags    sanity       
-
+#Change Test
 *** Test Cases ***
 MyFirstTest
     [Tags]    smoke
