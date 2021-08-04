@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.2 on win32)" generated="20210719 17:12:20.007" rpa="false">
+<suite id="s1" name="Demo1" source="C:\Users\Janne\eclipse-workspace\Demo1">
+<suite id="s1-s1" name="MyTestCases" source="C:\Users\Janne\eclipse-workspace\Demo1\MyTestCases.robot">
+<test id="s1-s1-t1" name="Username_password_book_And_FlightBooking_FromToronto_ToParis">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=7.1.1.1</arg>
+<arg>deviceName=Pixel_3_XL_API_25</arg>
+<arg>app=C:\\Users\\flightApp.apk</arg>
+<arg>appPackage=com.example.myapplication</arg>
+</arguments>
+<status status="PASS" starttime="20210719 17:12:22.760" endtime="20210719 17:13:22.111"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=login</arg>
+</arguments>
+<msg timestamp="20210719 17:13:22.121" level="INFO">Clicking element 'id=login'.</msg>
+<status status="PASS" starttime="20210719 17:13:22.113" endtime="20210719 17:13:22.933"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20210719 17:13:27.936" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210719 17:13:22.934" endtime="20210719 17:13:27.937"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>support@ngendigital.com</arg>
+</arguments>
+<msg timestamp="20210719 17:13:27.947" level="INFO">Typing text 'support@ngendigital.com' into text field 'id=username'</msg>
+<status status="PASS" starttime="20210719 17:13:27.939" endtime="20210719 17:13:28.168"></status>
+</kw>
+<kw name="Input Password" library="AppiumLibrary">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>abc123</arg>
+</arguments>
+<msg timestamp="20210719 17:13:28.174" level="INFO">Typing password into text field 'id=password'</msg>
+<status status="PASS" starttime="20210719 17:13:28.169" endtime="20210719 17:13:28.887"></status>
+</kw>
+<kw name="Hide Keyboard" library="AppiumLibrary">
+<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
+a particular key, ex. `Done`. In Android, no parameters are used.</doc>
+<status status="PASS" starttime="20210719 17:13:28.888" endtime="20210719 17:13:29.694"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20210719 17:13:39.700" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20210719 17:13:29.695" endtime="20210719 17:13:39.701"></status>
+</kw>
+<kw name="Click Button" library="AppiumLibrary">
+<doc>Click button</doc>
+<arguments>
+<arg>Sign In</arg>
+</arguments>
+<msg timestamp="20210719 17:13:39.973" level="INFO">'Sign In'.</msg>
+<msg timestamp="20210719 17:13:40.100" level="INFO">Clicking element 'Sign In'.</msg>
+<status status="PASS" starttime="20210719 17:13:39.702" endtime="20210719 17:13:40.168"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20210719 17:13:50.177" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20210719 17:13:40.169" endtime="20210719 17:13:50.179"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=book</arg>
+</arguments>
+<msg timestamp="20210719 17:13:50.190" level="INFO">Clicking element 'id=book'.</msg>
+<status status="PASS" starttime="20210719 17:13:50.182" endtime="20210719 17:13:50.861"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20210719 17:13:55.871" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210719 17:13:50.863" endtime="20210719 17:13:55.872"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=spinnerFrom</arg>
+</arguments>
+<msg timestamp="20210719 17:13:55.879" level="INFO">Clicking element 'id=spinnerFrom'.</msg>
+<status status="PASS" starttime="20210719 17:13:55.874" endtime="20210719 17:13:56.056"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20210719 17:14:01.101" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210719 17:13:56.058" endtime="20210719 17:14:01.103"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@text='Toronto']</arg>
+</arguments>
+<msg timestamp="20210719 17:14:01.125" level="INFO">Clicking element '//*[@text='Toronto']'.</msg>
+<status status="PASS" starttime="20210719 17:14:01.107" endtime="20210719 17:14:02.292"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20210719 17:14:07.301" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210719 17:14:02.294" endtime="20210719 17:14:07.302"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=spinnerTo</arg>
+</arguments>
+<msg timestamp="20210719 17:14:07.311" level="INFO">Clicking element 'id=spinnerTo'.</msg>
+<status status="PASS" starttime="20210719 17:14:07.303" endtime="20210719 17:14:07.444"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20210719 17:14:12.454" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210719 17:14:07.446" endtime="20210719 17:14:12.456"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@text='Paris']</arg>
+</arguments>
+<msg timestamp="20210719 17:14:12.460" level="INFO">Clicking element '//*[@text='Paris']'.</msg>
+<status status="PASS" starttime="20210719 17:14:12.457" endtime="20210719 17:14:12.600"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20210719 17:14:17.606" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210719 17:14:12.602" endtime="20210719 17:14:17.608"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=spinnerClass</arg>
+</arguments>
+<msg timestamp="20210719 17:14:17.614" level="INFO">Clicking element 'id=spinnerClass'.</msg>
+<status status="PASS" starttime="20210719 17:14:17.609" endtime="20210719 17:14:17.831"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20210719 17:14:22.841" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210719 17:14:17.832" endtime="20210719 17:14:22.842"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@text='Economy']</arg>
+</arguments>
+<msg timestamp="20210719 17:14:22.850" level="INFO">Clicking element '//*[@text='Economy']'.</msg>
+<status status="PASS" starttime="20210719 17:14:22.843" endtime="20210719 17:14:24.247"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20210719 17:14:29.256" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210719 17:14:24.249" endtime="20210719 17:14:29.257"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>textStartDate</arg>
+</arguments>
+<msg timestamp="20210719 17:14:29.269" level="INFO">Clicking element 'textStartDate'.</msg>
+<status status="PASS" starttime="20210719 17:14:29.260" endtime="20210719 17:14:29.422"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20210719 17:14:39.427" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20210719 17:14:29.423" endtime="20210719 17:14:39.428"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.view.View[@content-desc="03 August 2019"]</arg>
+</arguments>
+<msg timestamp="20210719 17:14:39.432" level="INFO">Clicking element '//android.view.View[@content-desc="03 August 2019"]'.</msg>
+<status status="PASS" starttime="20210719 17:14:39.429" endtime="20210719 17:14:40.627"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20210719 17:14:50.642" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20210719 17:14:40.629" endtime="20210719 17:14:50.643"></status>
+</kw>
+<kw name="Click Button" library="AppiumLibrary">
+<doc>Click button</doc>
+<arguments>
+<arg>OK</arg>
+</arguments>
+<msg timestamp="20210719 17:14:50.888" level="INFO">'CANCEL'.</msg>
+<msg timestamp="20210719 17:14:50.958" level="INFO">'OK'.</msg>
+<msg timestamp="20210719 17:14:51.035" level="INFO">Clicking element 'OK'.</msg>
+<status status="PASS" starttime="20210719 17:14:50.645" endtime="20210719 17:14:51.089"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20210719 17:14:56.108" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210719 17:14:51.091" endtime="20210719 17:14:56.110"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>textStartDate</arg>
+</arguments>
+<msg timestamp="20210719 17:14:56.124" level="INFO">Clicking element 'textStartDate'.</msg>
+<status status="PASS" starttime="20210719 17:14:56.113" endtime="20210719 17:14:56.361"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20210719 17:15:06.382" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20210719 17:14:56.365" endtime="20210719 17:15:06.384"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.view.View[@content-desc="22 August 2019"]</arg>
+</arguments>
+<msg timestamp="20210719 17:15:06.388" level="INFO">Clicking element '//android.view.View[@content-desc="22 August 2019"]'.</msg>
+<status status="PASS" starttime="20210719 17:15:06.385" endtime="20210719 17:15:07.365"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20210719 17:15:12.367" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210719 17:15:07.366" endtime="20210719 17:15:12.368"></status>
+</kw>
+<kw name="Click Button" library="AppiumLibrary">
+<doc>Click button</doc>
+<arguments>
+<arg>OK</arg>
+</arguments>
+<msg timestamp="20210719 17:15:12.533" level="INFO">'CANCEL'.</msg>
+<msg timestamp="20210719 17:15:12.598" level="INFO">'OK'.</msg>
+<msg timestamp="20210719 17:15:12.670" level="INFO">Clicking element 'OK'.</msg>
+<status status="PASS" starttime="20210719 17:15:12.371" endtime="20210719 17:15:12.714"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20210719 17:15:17.733" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210719 17:15:12.715" endtime="20210719 17:15:17.734"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>radioButtonFlight</arg>
+</arguments>
+<msg timestamp="20210719 17:15:17.744" level="INFO">Clicking element 'radioButtonFlight'.</msg>
+<status status="PASS" starttime="20210719 17:15:17.735" endtime="20210719 17:15:17.870"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20210719 17:15:22.884" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210719 17:15:17.871" endtime="20210719 17:15:22.885"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>book_flight</arg>
+</arguments>
+<msg timestamp="20210719 17:15:22.894" level="INFO">Clicking element 'book_flight'.</msg>
+<status status="PASS" starttime="20210719 17:15:22.886" endtime="20210719 17:15:23.092"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20210719 17:15:28.101" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210719 17:15:23.094" endtime="20210719 17:15:28.102"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>price5</arg>
+</arguments>
+<msg timestamp="20210719 17:15:28.107" level="INFO">Clicking element 'price5'.</msg>
+<status status="PASS" starttime="20210719 17:15:28.104" endtime="20210719 17:15:28.232"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20210719 17:15:33.240" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210719 17:15:28.234" endtime="20210719 17:15:33.241"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>confirm_order</arg>
+</arguments>
+<msg timestamp="20210719 17:15:33.249" level="INFO">Clicking element 'confirm_order'.</msg>
+<status status="PASS" starttime="20210719 17:15:33.244" endtime="20210719 17:15:33.493"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20210719 17:15:38.516" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210719 17:15:33.496" endtime="20210719 17:15:38.517"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Your flight is booked. Reservation number is CADX2214</arg>
+</arguments>
+<msg timestamp="20210719 17:15:38.625" level="INFO">Current page contains text 'Your flight is booked. Reservation number is CADX2214'.</msg>
+<status status="PASS" starttime="20210719 17:15:38.519" endtime="20210719 17:15:38.627"></status>
+</kw>
+<status status="PASS" starttime="20210719 17:12:22.750" endtime="20210719 17:15:38.628" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210719 17:12:21.520" endtime="20210719 17:15:38.632"></status>
+</suite>
+<status status="PASS" starttime="20210719 17:12:21.286" endtime="20210719 17:15:38.646"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Demo1">Demo1</stat>
+<stat pass="1" fail="0" id="s1-s1" name="MyTestCases">Demo1.MyTestCases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
