@@ -1,64 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.8.2 on win32)" generated="20201126 15:12:54.764" rpa="false">
-<suite id="s1" name="TestSuite1" source="C:\Users\Janne\eclipse-workspace\RobotProjectJanne\Test\TestSuite1.robot">
-<kw name="Log" library="BuiltIn" type="setup">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
+<robot generator="Robot 4.1 (Python 3.8.2 on win32)" generated="20210803 16:43:06.183" rpa="false" schemaversion="2">
+<suite id="s1" name="RobotProjectJanne" source="C:\Users\Janne\git\RobotProject2_Janne\RobotProjectJanne">
+<suite id="s1-s1" name="Test" source="C:\Users\Janne\git\RobotProject2_Janne\RobotProjectJanne\Test">
+<suite id="s1-s1-s1" name="TestSuite1" source="C:\Users\Janne\git\RobotProject2_Janne\RobotProjectJanne\Test\TestSuite1.robot">
+<kw name="Log" library="BuiltIn" type="SETUP">
 <arg>I am inside Test Suite Setup</arg>
-</arguments>
-<msg timestamp="20201126 15:12:55.061" level="INFO">I am inside Test Suite Setup</msg>
-<status status="PASS" starttime="20201126 15:12:55.060" endtime="20201126 15:12:55.061"></status>
-</kw>
-<test id="s1-t1" name="MyFirstTest">
-<kw name="Log" library="BuiltIn" type="setup">
 <doc>Logs the given message with the given level.</doc>
-<arguments>
+<msg timestamp="20210803 16:43:07.316" level="INFO">I am inside Test Suite Setup</msg>
+<status status="PASS" starttime="20210803 16:43:07.312" endtime="20210803 16:43:07.317"/>
+</kw>
+<test id="s1-s1-s1-t1" name="SampleLoginTest">
+<kw name="Log" library="BuiltIn" type="SETUP">
 <arg>I am inside Test Setup</arg>
-</arguments>
-<msg timestamp="20201126 15:12:55.062" level="INFO">I am inside Test Setup</msg>
-<status status="PASS" starttime="20201126 15:12:55.062" endtime="20201126 15:12:55.062"></status>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210803 16:43:07.323" level="INFO">I am inside Test Setup</msg>
+<status status="PASS" starttime="20210803 16:43:07.322" endtime="20210803 16:43:07.325"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210803 16:43:07.332" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20210803 16:43:07.326" endtime="20210803 16:43:14.781"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210803 16:43:14.786" endtime="20210803 16:43:14.798"/>
+</kw>
+<kw name="LoginKW">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=txtUsername</arg>
+<arg>${LGOINDATA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210803 16:43:14.803" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20210803 16:43:14.801" endtime="20210803 16:43:15.116"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=txtPassword</arg>
+<arg>${LGOINDATA2}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20210803 16:43:15.119" level="INFO">Typing password into text field 'id=txtPassword'.</msg>
+<msg timestamp="20210803 16:43:15.246" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20210803 16:43:15.421" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20210803 16:43:15.118" endtime="20210803 16:43:15.422"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=btnLogin</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210803 16:43:15.425" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20210803 16:43:15.423" endtime="20210803 16:43:17.719"/>
+</kw>
+<status status="PASS" starttime="20210803 16:43:14.799" endtime="20210803 16:43:17.721"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210803 16:43:22.731" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210803 16:43:17.724" endtime="20210803 16:43:22.731"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=welcome</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210803 16:43:22.734" level="INFO">Clicking element 'id=welcome'.</msg>
+<status status="PASS" starttime="20210803 16:43:22.732" endtime="20210803 16:43:22.854"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>link=Logout</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210803 16:43:22.858" level="INFO">Clicking element 'link=Logout'.</msg>
+<status status="PASS" starttime="20210803 16:43:22.856" endtime="20210803 16:43:23.935"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210803 16:43:23.936" endtime="20210803 16:43:26.955"/>
 </kw>
 <kw name="Log" library="BuiltIn">
+<arg>Test Completed</arg>
 <doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>Hello World...</arg>
-</arguments>
-<msg timestamp="20201126 15:12:55.063" level="INFO">Hello World...</msg>
-<status status="PASS" starttime="20201126 15:12:55.063" endtime="20201126 15:12:55.063"></status>
+<msg timestamp="20210803 16:43:26.959" level="INFO">Test Completed</msg>
+<status status="PASS" starttime="20210803 16:43:26.957" endtime="20210803 16:43:26.960"/>
 </kw>
-<kw name="Log" library="BuiltIn" type="teardown">
+<kw name="Log" library="BuiltIn">
+<arg>This test was executed by %{username} on %{os}</arg>
 <doc>Logs the given message with the given level.</doc>
-<arguments>
+<msg timestamp="20210803 16:43:26.962" level="INFO">This test was executed by Janne on Windows_NT</msg>
+<status status="PASS" starttime="20210803 16:43:26.961" endtime="20210803 16:43:26.963"/>
+</kw>
+<kw name="Log" library="BuiltIn" type="TEARDOWN">
 <arg>I am inside Test teardown</arg>
-</arguments>
-<msg timestamp="20201126 15:12:55.064" level="INFO">I am inside Test teardown</msg>
-<status status="PASS" starttime="20201126 15:12:55.064" endtime="20201126 15:12:55.064"></status>
-</kw>
-<tags>
-<tag>smoke</tag>
-</tags>
-<status status="PASS" starttime="20201126 15:12:55.061" endtime="20201126 15:12:55.065" critical="yes"></status>
-</test>
-<kw name="Log" library="BuiltIn" type="teardown">
 <doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>I am inside Test suite Teardown</arg>
-</arguments>
-<msg timestamp="20201126 15:12:55.068" level="INFO">I am inside Test suite Teardown</msg>
-<status status="PASS" starttime="20201126 15:12:55.068" endtime="20201126 15:12:55.068"></status>
+<msg timestamp="20210803 16:43:26.966" level="INFO">I am inside Test teardown</msg>
+<status status="PASS" starttime="20210803 16:43:26.964" endtime="20210803 16:43:26.966"/>
 </kw>
-<status status="PASS" starttime="20201126 15:12:54.766" endtime="20201126 15:12:55.068"></status>
+<doc>This is a sample login Test</doc>
+<tag>sanity</tag>
+<status status="PASS" starttime="20210803 16:43:07.318" endtime="20210803 16:43:26.967"/>
+</test>
+<kw name="Log" library="BuiltIn" type="TEARDOWN">
+<arg>I am inside Test suite Teardown</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210803 16:43:26.973" level="INFO">I am inside Test suite Teardown</msg>
+<status status="PASS" starttime="20210803 16:43:26.972" endtime="20210803 16:43:26.974"/>
+</kw>
+<status status="PASS" starttime="20210803 16:43:06.544" endtime="20210803 16:43:26.974"/>
+</suite>
+<status status="PASS" starttime="20210803 16:43:06.534" endtime="20210803 16:43:26.983"/>
+</suite>
+<status status="PASS" starttime="20210803 16:43:06.425" endtime="20210803 16:43:26.989"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0">smoke</stat>
+<stat pass="1" fail="0" skip="0">sanity</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="TestSuite1">TestSuite1</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="RobotProjectJanne">RobotProjectJanne</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test">RobotProjectJanne.Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TestSuite1">RobotProjectJanne.Test.TestSuite1</stat>
 </suite>
 </statistics>
 <errors>

@@ -16,6 +16,7 @@ MyFirstTest
 FirstSeleniumTest
     Open Browser    https:google.com    chrome
     Set Browser Implicit Wait    5
+    Click Button    I agree
     Input Text    name=q    Automation step by step  
     Press Keys    name=q    ENTER
     #Click Button    name=btnK
@@ -29,7 +30,8 @@ SampleLoginTest
     Open Browser      ${URL}    chrome
     Set Browser Implicit Wait    5
     LoginKW
-    Click Element     id=welcome    
+    sleep    5
+    Click Element     id=welcome  
     Click Element     link=Logout  
     close Browser
     Log               Test Completed
@@ -37,13 +39,15 @@ SampleLoginTest
 
 *** Variables ***
 ${URL}    https://opensource-demo.orangehrmlive.com/
-@{CREDENTIALS}    Admin    admin123
-&{LGOINDATA}    username=Admin    password=admin123
+#@{CREDENTIALS}   1 Admin    admin123
+${LGOINDATA}        Admin  
+${LGOINDATA2}       admin123  
+
 
 *** Keywords ***
 LoginKW
-    Input Text        id=txtUsername    @{CREDENTIALS}[0]
-    Input Password    id=txtPassword    &{LGOINDATA}[password]
+    Input Text        id=txtUsername    ${LGOINDATA}
+    Input Password    id=txtPassword    ${LGOINDATA2}
     Click Button      id=btnLogin       
     
 
